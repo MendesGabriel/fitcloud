@@ -1,7 +1,7 @@
-# fitcloud
+# fitCloud
 
 
-### [Site Fitcloud](https://mendesgabriel.github.io/fitcloud/){:target="_blank"}
+### [Site FitCloud](https://mendesgabriel.github.io/fitcloud/)
 
 ## screenshots
 
