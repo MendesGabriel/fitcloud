@@ -77,8 +77,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col col-md-8 text-center">
-          <h1>FitCloud é sua empresa na Nuvem</h1>
-          <p class="text-h3">FitCloud é 100% web, totalmente na nuvem. ERP para micro e pequenas empresas que ajuda a organizar e controlar seus processos de maneira fácil e rápida. <a href="#"> Comece a usar hoje</a>.</p>
+          <h1>FitCloud - Sua empresa na Nuvem</h1>
+          <p class="text-h3">FitCloud é 100% web, totalmente na nuvem. ERP para micro e pequenas empresas que ajuda a organizar e controlar seus processos de maneira fácil e rápida. <br> <a href="#"> Comece a usar hoje</a>.</p>
         </div>
       </div>
     </div>
@@ -271,43 +271,5 @@
       </div>
     </div>
   </footer>
-
-
-
-  <div id="playground">
-  </div>
-
-  <script>
-      var get = function (url, callback) {
-        var xhr = new XMLHttpRequest();
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState == 4 && xhr.status == 200) {
-            var txt = xhr.responseText;
-            txt = txt.split('<body>')[1].split('</body>')[0];
-            callback(txt);
-          }
-        }
-
-        xhr.open("GET", url, false );
-        xhr.send();
-      }
-
-    var chooseBlock = function (e) {
-      e.preventDefault();
-
-      get(this.href, function (resp) {
-        document.querySelector('#playground').innerHTML = resp;
-      })
-    }
-
-    var els = document.querySelectorAll('#navigator a');
-
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i];
-
-      el.addEventListener('click', chooseBlock);
-    }
-  </script>
 </body>
 </html>
